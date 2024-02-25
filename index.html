@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>States of Mattering</title>
     <link href="css/mattering.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pacifico&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -15,12 +19,12 @@
         </section>
         <nav>
             <!-- The nav will be a hamburger on the left side -->
-            <p>&#9776;</p>
+            <p id="hambergernav">&#9776;</p>
         </nav>
         <form>
             <!-- Form field on the right side of the header will allow custeomers to enter their email address to be added to the contact list-->
             <label for="email"></label>
-            <input type="text" id="email" name="fname" placeholder="Enter email to join our community">
+            <input type="text" id="email" name="fname" placeholder="Enter email to join our community"> <br>
             <input type="submit" value="Submit">
         </form>
     </header>
@@ -32,13 +36,15 @@
         </div>
         <section>
             <!-- Section 2 will include an image and link to coaching services -->
+            <!--image size set temporarily. Will be reset in CSS during positioning-->
             <h3>Learn About Our Coaching Services</h3>
-            <a href="coaching.html"><img src="images/im-okay-plants.jpg" alt="I'm okay sign with plants"></a>
+            <a href="coaching.html"><img src="images/im-okay-plants.jpg" alt="I'm okay sign with plants" width="400"></a>
         </section>
         <section>
             <!-- Section 3 will include a link to classes and seminars -->
+            <!--image size set temporarily. Will be reset in CSS during positioning-->
             <h3>Register for Classes and Seminars</h3>
-            <a href="coaching.html"><img src="images/hands.jpg" alt="Hands on a log"></a>
+            <a href="coaching.html"><img src="images/hands.jpg" alt="Hands on a log" width="400"></a>
         </section>
     </main>
     
@@ -47,7 +53,7 @@
          <form>
             <!-- Form field on the right side of the header will allow custeomers to enter their email address to be added to the contact list-->
             <label for="email"></label>
-            <input type="text" id="emailfooter" name="fname" placeholder="Enter email to join our community">
+            <input type="text" id="emailfooter" name="fname" placeholder="Enter email to join our community"><br>
             <input type="submit" value="Submit">
         </form>
         <div id="footer-links">
