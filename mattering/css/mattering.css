@@ -1,0 +1,219 @@
+/* Reset Stylesheets */
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* HEADING AND LINK STYLES */
+
+/* Heading Styles */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #202251;
+}
+
+h2 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #595961;
+}
+
+h3 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #618C74;
+    background-color: white;
+    padding: 2%;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: #202251;
+}
+
+p {
+    font-family: 'urbanist', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: black;
+}
+
+/* Unvisited link */
+a:link {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20px;
+    color: #202251;
+}
+
+/* Visited link */
+a:visited {
+color: #618C74;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    padding: 5%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: #202251;
+}
+
+header::before {
+    content: "";
+    background-image: url(../images/typewriter.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    height: auto;   
+    background-position: center bottom;
+    opacity:0.2;
+}
+
+#page-title {
+    margin-bottom: 5%;
+}
+
+#description {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#header-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 80%;
+}
+
+#hamburgernav {
+    height: 50px;
+    width: auto;
+}
+
+/* form {
+    color: black;
+    align-items: center;
+} */
+
+#email {
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 2%;
+} 
+/* 
+.input-button {
+
+}
+
+/* HOME PAGE CARDS */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 5%;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 5%;
+    background-position: center bottom;
+    align-self: center;
+}
+
+
+
+#card-coaching {
+    background-image: url(../images/im-okay.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #202251;
+}
+
+#card-classes {
+    background-image: url(../images/hands.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #202251;
+}
+
+#card-blog {
+    background-image: url(../images/coffee.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #202251;
+}
+
+#card-about {
+    background-image: url(../images/women-group.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #202251;
+}
+
+/* FOOTER */
+
+#footer-links {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    font-size: 40px;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 30%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1024px) {
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card {
+        margin: 1%;
+    }
+
+    #footer-links {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
